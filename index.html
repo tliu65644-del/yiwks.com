@@ -95,11 +95,20 @@ nav .nav-inner { display: flex; padding: 0 8px; }
 nav a { display: inline-block; padding: 12px 14px; font-size: 14px; color: #333; border-bottom: 2px solid transparent; transition: all 0.2s; }
 nav a:hover, nav a.active { color: #d4262b; border-bottom-color: #d4262b; }
 
-/* Hero */
-.hero { margin-top: 96px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 40px 16px; text-align: center; }
-.hero h1 { font-size: 28px; margin-bottom: 12px; }
-.hero p { font-size: 16px; opacity: 0.9; margin-bottom: 8px; }
+/* Hero - 实景轮播背景 */
+.hero { margin-top: 96px; position: relative; color: #fff; padding: 40px 16px; text-align: center; min-height: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; }
+.hero .slider-bg { position: absolute; inset: 0; z-index: 0; }
+.hero .slider-bg .slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease-in-out; }
+.hero .slider-bg .slide.active { opacity: 1; }
+.hero .slider-bg .slide::after { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+.hero .hero-content { position: relative; z-index: 1; width: 100%; }
+.hero h1 { font-size: 28px; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+.hero p { font-size: 16px; opacity: 0.95; margin-bottom: 8px; text-shadow: 0 1px 3px rgba(0,0,0,0.3); }
 .hero .big-phone { display: inline-block; margin-top: 16px; padding: 14px 40px; background: #d4262b; color: #fff; font-size: 22px; font-weight: bold; border-radius: 50px; box-shadow: 0 4px 12px rgba(212,38,43,0.4); }
+.hero .arrow { position: absolute; top: 50%; z-index: 2; transform: translateY(-50%); background: rgba(255,255,255,0.2); color: #fff; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+.hero .arrow:hover { background: rgba(255,255,255,0.4); }
+.hero .arrow-left { left: 12px; }
+.hero .arrow-right { right: 12px; }
 
 /* 服务项目轮播 */
 .services { padding: 40px 0; background: #fff; }
@@ -111,7 +120,8 @@ nav a:hover, nav a.active { color: #d4262b; border-bottom-color: #d4262b; }
 .service-card h3 { font-size: 16px; color: #1a1a2e; margin-bottom: 4px; }
 .service-card p { font-size: 13px; color: #666; }
 
-/* 预约表单区 */
+/* 案例图片 contain 模式（完整展示原图） */
+.case-item img { width: 100%; height: 160px; object-fit: contain; background: #f0f0f0; }
 .booking { padding: 40px 0; background: #f0f4f8; }
 .booking h2 { text-align: center; font-size: 22px; margin-bottom: 16px; color: #1a1a2e; }
 .booking .sub { text-align: center; color: #666; font-size: 14px; margin-bottom: 20px; }
@@ -122,7 +132,6 @@ nav a:hover, nav a.active { color: #d4262b; border-bottom-color: #d4262b; }
 .cases h2 { text-align: center; font-size: 22px; margin-bottom: 24px; color: #1a1a2e; }
 .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .case-item { border-radius: 12px; overflow: hidden; background: #f8f8f8; }
-.case-item img { width: 100%; height: 160px; object-fit: cover; }
 .case-item .label { padding: 10px; font-size: 13px; text-align: center; color: #333; }
 
 /* 关于我们 */
@@ -186,12 +195,22 @@ footer .copyright { text-align: center; margin-top: 24px; font-size: 12px; opaci
   </div>
 </nav>
 
-<!-- Hero -->
+<!-- Hero 实景轮播 -->
 <section class="hero">
-  <h1>义乌金钥匙开锁店</h1>
-  <p>🔑 实体门店 · 24小时上门 · 福田10分钟到达</p>
-  <p>开锁 / 换锁芯 / 汽车钥匙 / 指纹锁 / 电梯卡</p>
-  <a href="tel:15605799786" class="big-phone">📞 立即致电 15605799786</a>
+  <div class="slider-bg">
+    <div class="slide active" style="background-image:url('/images/store/store-front.jpg')"></div>
+    <div class="slide" style="background-image:url('/images/cases/lock-1.jpg')"></div>
+    <div class="slide" style="background-image:url('/images/cases/fingerprint-1.jpg')"></div>
+    <div class="slide" style="background-image:url('/images/cases/car-key-1.jpg')"></div>
+  </div>
+  <button class="arrow arrow-left" onclick="prevSlide()">&#10094;</button>
+  <button class="arrow arrow-right" onclick="nextSlide()">&#10095;</button>
+  <div class="hero-content">
+    <h1>义乌金钥匙开锁店</h1>
+    <p>🔑 实体门店 · 24小时上门 · 福田10分钟到达</p>
+    <p>开锁 / 换锁芯 / 汽车钥匙 / 指纹锁 / 电梯卡</p>
+    <a href="tel:15605799786" class="big-phone">📞 立即致电 15605799786</a>
+  </div>
 </section>
 
 <!-- 服务项目 -->
@@ -321,6 +340,17 @@ footer .copyright { text-align: center; margin-top: 24px; font-size: 12px; opaci
 </div>
 
 <script>
+var slideIndex = 0;
+var slides = document.querySelectorAll('.hero .slider-bg .slide');
+function showSlide(n) {
+  slides.forEach(function(s) { s.classList.remove('active'); });
+  slideIndex = (n + slides.length) % slides.length;
+  slides[slideIndex].classList.add('active');
+}
+function nextSlide() { showSlide(slideIndex + 1); }
+function prevSlide() { showSlide(slideIndex - 1); }
+setInterval(function() { showSlide(slideIndex + 1); }, 5000);
+
 function showWechat() {
   document.getElementById('wechatPopup').classList.add('show');
   return false;
@@ -329,7 +359,6 @@ function hideWechat() {
   document.getElementById('wechatPopup').classList.remove('show');
 }
 document.addEventListener('DOMContentLoaded', function() {
-  // 高亮当前页面对应的导航项
   var path = window.location.pathname;
   document.querySelectorAll('nav a').forEach(function(a) {
     if (path === '/' && a.getAttribute('href') === '/') a.classList.add('active');
