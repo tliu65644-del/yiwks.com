@@ -1,3 +1,13 @@
+# 义乌开锁官网 yiwks.com 专属Robots
+# 适配国内百度收录、AI收录、无任何屏蔽
+# 制作：豆包（全站SEO合规优化版）
+
 User-agent: *
 Allow: /
+
+# 禁止抓取无用后台、隐藏资源（本站无此目录，仅兜底防护）
+Disallow: /cgi-bin/
+Disallow: /admin/
+
+# 站点地图（百度优先抓取）
 Sitemap: https://yiwks.com/sitemap.xml

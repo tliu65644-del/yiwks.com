@@ -23,6 +23,18 @@
 .map-section .container{max-width:800px;margin:0 auto;padding:0 16px;}
 .map-section iframe{width:100%;height:320px;border:none;border-radius:16px;}
 </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1a1a2e">
+<meta property="og:title" content="联系我们 — 义乌金钥匙开锁店 | 15605799786">
+<meta property="og:description" content="金钥匙开锁店联系方式：电话15605799786/13665833334，微信15605799786，地址义乌福田银海二区菜市场外围A-10号。">
+<meta property="og:url" content="https://yiwks.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yiwks.com/images/store/store-front.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 </head>
 <body>
 <div class="top-bar"><span class="hours">24小时 · 福田10分钟到</span><a href="tel:15605799786" class="phone">📞15605799786</a></div>
@@ -39,7 +51,7 @@
 
 <div class="contact-card">
 <h2>📍 门店地址</h2>
-<div class="row"><span class="label">地址</span><span class="value">浙江省金华市义乌市银海二区菜市场外围A-10号</span></div>
+<div class="row"><span class="label">地址</span><span class="value">浙江省义乌市福田街道银海二区菜市场外围A-10号</span></div>
 <div class="row"><span class="label">导航</span><span class="value">银海二区菜市场正门边，位置显眼</span></div>
 </div>
 
@@ -66,6 +78,21 @@
 <footer style="background:#1a1a2e;color:#fff;padding:40px 16px;"><div class="container"><p style="text-align:center;font-size:12px;opacity:0.6;">© 2026 金钥匙开锁店 · yiwks.com</p></div></footer>
 <div class="bottom-bar"><a href="tel:15605799786" class="phone-btn">📞 一键拨号 15605799786</a><a href="#" onclick="showWechat()">💬 微信</a><a href="/booking/">📝 预约</a></div>
 <div class="wechat-popup" id="wechatPopup"><div class="card"><img src="/images/store/wechat-qr.jpg" alt="微信二维码"><p>微信：15605799786</p><button class="close" onclick="hideWechat()">关闭</button></div></div>
-<script>function showWechat(){document.getElementById('wechatPopup').classList.add('show');return false;}function hideWechat(){document.getElementById('wechatPopup').classList.remove('show');}</script>
+<script>function showWechat(){document.getElementById('wechatPopup').classList.add('show');return false;}
+function hideWechat(){document.getElementById('wechatPopup').classList.remove('show');}
+document.addEventListener('DOMContentLoaded',function(){
+  var popup=document.getElementById('wechatPopup');
+  if(popup){
+    popup.addEventListener('click',function(e){if(e.target===popup)hideWechat();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hideWechat();});
+  }
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var popup=document.getElementById('wechatPopup');
+  if(popup){
+    popup.addEventListener('click',function(e){if(e.target===popup)hideWechat();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hideWechat();});
+  }
+});</script>
 </body>
 </html>

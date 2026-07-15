@@ -21,6 +21,18 @@
 .section-title{font-size:20px;color:#1a1a2e;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #d4262b;}
 @media(min-width:768px){.gallery-grid{grid-template-columns:1fr 1fr 1fr;}}
 </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1a1a2e">
+<meta property="og:title" content="施工案例 — 义乌开锁换锁汽车钥匙 | 金钥匙开锁店">
+<meta property="og:description" content="金钥匙开锁店实拍施工案例，防盗门开锁、汽车钥匙匹配、指纹锁安装、电梯卡复制。">
+<meta property="og:url" content="https://yiwks.com/cases/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yiwks.com/images/store/store-front.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 </head>
 <body>
 <div class="top-bar"><span class="hours">24小时 · 福田10分钟到</span><a href="tel:15605799786" class="phone">📞15605799786</a></div>
@@ -38,29 +50,38 @@
 
 <div class="section-title">🔑 汽车钥匙案例</div>
 <div class="gallery-grid">
-<div class="gallery-item"><img src="/images/cases/car-key-1.jpg" alt="汽车遥控钥匙匹配"><div class="info"><h3>汽车钥匙全丢配匙</h3><p>大众朗逸全丢，匹配遥控钥匙</p></div></div>
-<div class="gallery-item"><img src="/images/cases/car-key-2.jpg" alt="汽车芯片钥匙"><div class="info"><h3>芯片钥匙匹配</h3><p>丰田凯美瑞智能卡匹配</p></div></div>
+<div class="gallery-item"><img src="/images/cases/car-key-1.jpg" alt="汽车遥控钥匙匹配"><div class="info"><h3>汽车钥匙全丢配匙</h3><p>专业设备匹配芯片遥控</p></div></div>
 </div>
 
 <div class="section-title">👆 指纹锁安装案例</div>
 <div class="gallery-grid">
-<div class="gallery-item"><img src="/images/cases/fingerprint-1.jpg" alt="指纹锁安装"><div class="info"><h3>指纹锁安装调试</h3><p>凯迪仕K9全自动指纹锁安装</p></div></div>
-<div class="gallery-item"><img src="/images/cases/fingerprint-2.jpg" alt="智能锁安装"><div class="info"><h3>小米智能锁安装</h3><p>小米人脸识别锁安装调试</p></div></div>
+<div class="gallery-item"><img src="/images/cases/fingerprint-1.jpg" alt="指纹锁安装"><div class="info"><h3>指纹锁安装调试</h3><p>品牌指纹锁专业安装</p></div></div>
 </div>
 
 <div class="section-title">💳 门禁电梯卡案例</div>
 <div class="gallery-grid">
-<div class="gallery-item"><img src="/images/cases/card-1.jpg" alt="电梯卡复制"><div class="info"><h3>电梯梯控卡复制</h3><p>IC卡电梯卡拷贝，PM3设备操作</p></div></div>
-<div class="gallery-item"><img src="/images/cases/card-2.jpg" alt="门禁卡复制"><div class="info"><h3>门禁卡复制</h3><p>加密IC卡破解复制</p></div></div>
-</div>
-
-<p style="text-align:center;margin:32px 0;font-size:14px;color:#999;">更多案例持续更新中 · <a href="tel:15605799786" style="color:#d4262b;">预约服务 15605799786</a></p>
+<div class="gallery-item"><img src="/images/cases/card-1.jpg" alt="电梯卡复制"><div class="info"><h3>电梯梯控卡复制</h3><p>IC卡/加密卡专业复制</p></div></div>
 </div>
 </section>
 
 <footer style="background:#1a1a2e;color:#fff;padding:40px 16px;"><div class="container"><p style="text-align:center;font-size:12px;opacity:0.6;">© 2026 金钥匙开锁店 · yiwks.com</p></div></footer>
 <div class="bottom-bar"><a href="tel:15605799786" class="phone-btn">📞 一键拨号 15605799786</a><a href="#" onclick="showWechat()">💬 微信</a><a href="/booking/">📝 预约</a></div>
 <div class="wechat-popup" id="wechatPopup"><div class="card"><img src="/images/store/wechat-qr.jpg" alt="微信二维码"><p>微信：15605799786</p><button class="close" onclick="hideWechat()">关闭</button></div></div>
-<script>function showWechat(){document.getElementById('wechatPopup').classList.add('show');return false;}function hideWechat(){document.getElementById('wechatPopup').classList.remove('show');}</script>
+<script>function showWechat(){document.getElementById('wechatPopup').classList.add('show');return false;}
+function hideWechat(){document.getElementById('wechatPopup').classList.remove('show');}
+document.addEventListener('DOMContentLoaded',function(){
+  var popup=document.getElementById('wechatPopup');
+  if(popup){
+    popup.addEventListener('click',function(e){if(e.target===popup)hideWechat();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hideWechat();});
+  }
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var popup=document.getElementById('wechatPopup');
+  if(popup){
+    popup.addEventListener('click',function(e){if(e.target===popup)hideWechat();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hideWechat();});
+  }
+});</script>
 </body>
 </html>

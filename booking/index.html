@@ -16,6 +16,18 @@
 .form-container iframe { width: 100%; min-height: 680px; border: none; }
 .notice { margin-top: 16px; padding: 12px; background: #fef2f2; border-radius: 8px; font-size: 13px; color: #666; text-align: center; }
 </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1a1a2e">
+<meta property="og:title" content="在线预约 — 义乌开锁换锁指纹锁 | 金钥匙开锁店">
+<meta property="og:description" content="在线预约金钥匙开锁店服务，提交后10分钟内联系您。">
+<meta property="og:url" content="https://yiwks.com/booking/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yiwks.com/images/store/store-front.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
 </head>
 <body>
 <div class="top-bar"><span class="hours">24小时 · 福田10分钟到</span><a href="tel:15605799786" class="phone">📞 15605799786</a></div>
@@ -45,6 +57,13 @@
 <script>
 function showWechat(){document.getElementById('wechatPopup').classList.add('show');return false;}
 function hideWechat(){document.getElementById('wechatPopup').classList.remove('show');}
+document.addEventListener('DOMContentLoaded',function(){
+  var popup=document.getElementById('wechatPopup');
+  if(popup){
+    popup.addEventListener('click',function(e){if(e.target===popup)hideWechat();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')hideWechat();});
+  }
+});
 </script>
 <style>.top-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:#d4262b;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;font-size:14px;}.top-bar .phone{font-size:20px;font-weight:bold;color:#fff;text-decoration:none;}nav{position:fixed;top:48px;left:0;right:0;z-index:999;background:#fff;border-bottom:1px solid #e8e8e8;overflow-x:auto;white-space:nowrap;}nav .nav-inner{display:flex;padding:0 8px;max-width:1100px;margin:0 auto;}nav a{display:inline-block;padding:12px 14px;font-size:14px;color:#333;border-bottom:2px solid transparent;text-decoration:none;}nav a.active{color:#d4262b;border-bottom-color:#d4262b;}.bottom-bar{position:fixed;bottom:0;left:0;right:0;z-index:1000;background:#fff;border-top:1px solid #e8e8e8;display:flex;}.bottom-bar a{flex:1;text-align:center;padding:12px 8px;font-size:13px;color:#333;text-decoration:none;}.bottom-bar a.phone-btn{background:#d4262b;color:#fff;font-weight:bold;font-size:18px;padding:10px;}.wechat-popup{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;}.wechat-popup.show{display:flex;}.wechat-popup .card{background:#fff;padding:24px;border-radius:16px;text-align:center;max-width:300px;}.wechat-popup .card img{width:200px;height:200px;margin-bottom:12px;}.wechat-popup .card .close{margin-top:12px;padding:8px 24px;background:#d4262b;color:#fff;border:none;border-radius:8px;font-size:14px;cursor:pointer;}body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;margin:0;padding:0;}</style>
 </body>
