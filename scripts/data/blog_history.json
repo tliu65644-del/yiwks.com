@@ -13,5 +13,10 @@
     "fingerprint-lock-dead-battery",
     "lock-cylinder-stuck-fix",
     "access-card-to-phone"
+  ],
+  "2026-07-18": [
+    "car-key-button-not-working",
+    "hotel-card-lock-emergency",
+    "safe-electronic-vs-mechanical"
   ]
 }
