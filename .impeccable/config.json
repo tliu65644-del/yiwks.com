@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "reason": "Hero白字在55%黑遮罩轮播图上,检测器看不到图片背景;引擎不支持low-contrast精确值忽略,按文件通配",
+        "createdAt": "2026-07-18T01:59:10.737Z"
+      }
+    ]
+  }
+}
