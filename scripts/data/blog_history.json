@@ -28,5 +28,10 @@
     "smart-lock-door-camera",
     "password-lock-change-code",
     "midnight-lock-emergency"
+  ],
+  "2026-07-21": [
+    "fingerprint-not-recognized",
+    "yiwu-access-card-copy-price",
+    "yiwu-fingerprint-lock-brand-compare"
   ]
 }
