@@ -55,8 +55,8 @@
     "door-viewer-security"
   ],
   "2026-08-05": [
-    "yiwu-door-unlock-price",
-    "door-viewer-security",
-    "lock-cylinder-stuck-fix"
+    "fingerprint-not-recognized",
+    "safe-electronic-vs-mechanical",
+    "access-card-to-phone"
   ]
 }
