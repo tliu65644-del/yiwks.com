@@ -58,5 +58,10 @@
     "fingerprint-not-recognized",
     "safe-electronic-vs-mechanical",
     "access-card-to-phone"
+  ],
+  "2026-08-06": [
+    "lock-cylinder-stuck-fix",
+    "door-viewer-security",
+    "safe-electronic-vs-mechanical"
   ]
 }
