@@ -63,5 +63,10 @@
     "lock-cylinder-stuck-fix",
     "door-viewer-security",
     "safe-electronic-vs-mechanical"
+  ],
+  "2026-08-07": [
+    "password-lock-change-code",
+    "door-viewer-security",
+    "fingerprint-lock-size-requirements"
   ]
 }
