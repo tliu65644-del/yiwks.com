@@ -83,5 +83,10 @@
     "lock-cylinder-stuck-fix",
     "office-glass-door-lock",
     "push-start-key-lost"
+  ],
+  "2026-08-12": [
+    "midnight-lock-emergency",
+    "smart-lock-door-camera",
+    "car-key-button-not-working"
   ]
 }
