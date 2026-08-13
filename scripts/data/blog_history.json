@@ -88,5 +88,10 @@
     "midnight-lock-emergency",
     "smart-lock-door-camera",
     "car-key-button-not-working"
+  ],
+  "2026-08-14": [
+    "car-key-locked-inside-yiwu",
+    "fingerprint-lock-install-tips",
+    "fingerprint-not-recognized"
   ]
 }
