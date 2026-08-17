@@ -103,5 +103,10 @@
     "fingerprint-lock-size-requirements",
     "access-card-to-phone",
     "door-seal-lock-problem"
+  ],
+  "2026-08-18": [
+    "password-lock-change-code",
+    "fingerprint-not-recognized",
+    "lock-cylinder-level-guide"
   ]
 }
