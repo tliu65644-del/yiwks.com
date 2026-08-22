@@ -113,5 +113,10 @@
     "access-card-to-phone",
     "midnight-lock-emergency",
     "hotel-card-lock-emergency"
+  ],
+  "2026-08-23": [
+    "car-key-matching-time-yiwu",
+    "yiwu-fingerprint-lock-brand-compare",
+    "yiwu-door-unlock-price"
   ]
 }
