@@ -138,5 +138,10 @@
     "door-viewer-security",
     "car-key-locked-inside-yiwu",
     "yiwu-door-unlock-price"
+  ],
+  "2026-08-30": [
+    "yiwu-access-card-copy-price",
+    "fingerprint-lock-dead-battery",
+    "safe-unlock-password-forgot-yiwu"
   ]
 }
