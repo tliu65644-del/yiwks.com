@@ -143,5 +143,10 @@
     "yiwu-access-card-copy-price",
     "fingerprint-lock-dead-battery",
     "safe-unlock-password-forgot-yiwu"
+  ],
+  "2026-08-31": [
+    "fingerprint-not-recognized",
+    "broken-key-extraction",
+    "lock-cylinder-level-guide"
   ]
 }
