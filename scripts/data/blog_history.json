@@ -148,5 +148,10 @@
     "fingerprint-not-recognized",
     "broken-key-extraction",
     "lock-cylinder-level-guide"
+  ],
+  "2026-09-01": [
+    "hotel-card-lock-emergency",
+    "fingerprint-not-recognized",
+    "old-door-fingerprint-lock"
   ]
 }
