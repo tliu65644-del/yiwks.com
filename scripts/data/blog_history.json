@@ -153,5 +153,10 @@
     "hotel-card-lock-emergency",
     "fingerprint-not-recognized",
     "old-door-fingerprint-lock"
+  ],
+  "2026-10-02": [
+    "car-key-matching-time-yiwu",
+    "midnight-lock-emergency",
+    "old-door-fingerprint-lock"
   ]
 }
