@@ -188,5 +188,10 @@
     "fingerprint-not-recognized",
     "door-seal-lock-problem",
     "why-call-police-recorded-locksmith"
+  ],
+  "2026-10-09": [
+    "door-viewer-security",
+    "hotel-card-lock-emergency",
+    "old-door-fingerprint-lock"
   ]
 }
