@@ -193,5 +193,10 @@
     "door-viewer-security",
     "hotel-card-lock-emergency",
     "old-door-fingerprint-lock"
+  ],
+  "2026-10-10": [
+    "rental-lock-cylinder-deposit",
+    "password-lock-change-code",
+    "fingerprint-lock-dead-battery"
   ]
 }
