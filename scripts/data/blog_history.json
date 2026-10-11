@@ -198,5 +198,10 @@
     "rental-lock-cylinder-deposit",
     "password-lock-change-code",
     "fingerprint-lock-dead-battery"
+  ],
+  "2026-10-11": [
+    "elevator-card-copy-guide",
+    "office-glass-door-lock",
+    "password-lock-change-code"
   ]
 }
