@@ -213,5 +213,10 @@
     "yiwu-access-card-copy-price",
     "old-door-fingerprint-lock",
     "safe-electronic-vs-mechanical"
+  ],
+  "2026-10-14": [
+    "old-door-fingerprint-lock",
+    "password-lock-change-code",
+    "safe-unlock-password-forgot-yiwu"
   ]
 }
