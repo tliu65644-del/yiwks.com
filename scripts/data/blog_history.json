@@ -218,5 +218,10 @@
     "old-door-fingerprint-lock",
     "password-lock-change-code",
     "safe-unlock-password-forgot-yiwu"
+  ],
+  "2026-10-15": [
+    "car-key-water-damage",
+    "door-seal-lock-problem",
+    "fingerprint-lock-dead-battery"
   ]
 }
