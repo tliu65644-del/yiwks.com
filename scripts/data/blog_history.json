@@ -233,5 +233,10 @@
     "rental-lock-cylinder-deposit",
     "fingerprint-lock-size-requirements",
     "car-key-matching-time-yiwu"
+  ],
+  "2026-10-18": [
+    "broken-key-extraction",
+    "car-key-locked-inside-yiwu",
+    "car-key-lost-cost"
   ]
 }
