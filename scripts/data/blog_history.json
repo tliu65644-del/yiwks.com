@@ -238,5 +238,10 @@
     "broken-key-extraction",
     "car-key-locked-inside-yiwu",
     "car-key-lost-cost"
+  ],
+  "2026-10-19": [
+    "door-viewer-security",
+    "broken-key-extraction",
+    "car-key-button-not-working"
   ]
 }
