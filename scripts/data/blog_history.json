@@ -243,5 +243,10 @@
     "door-viewer-security",
     "broken-key-extraction",
     "car-key-button-not-working"
+  ],
+  "2026-10-20": [
+    "password-lock-change-code",
+    "yiwu-access-card-copy-price",
+    "rental-lock-cylinder-deposit"
   ]
 }
