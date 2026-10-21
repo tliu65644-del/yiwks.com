@@ -248,5 +248,10 @@
     "password-lock-change-code",
     "yiwu-access-card-copy-price",
     "rental-lock-cylinder-deposit"
+  ],
+  "2026-10-21": [
+    "fingerprint-lock-size-requirements",
+    "midnight-lock-emergency",
+    "safe-electronic-vs-mechanical"
   ]
 }
