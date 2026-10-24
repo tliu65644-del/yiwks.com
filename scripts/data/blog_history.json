@@ -263,5 +263,10 @@
     "yiwu-fingerprint-lock-brand-compare",
     "push-start-key-lost",
     "lock-cylinder-level-guide"
+  ],
+  "2026-10-24": [
+    "elevator-card-copy-guide",
+    "broken-key-extraction",
+    "midnight-lock-emergency"
   ]
 }
